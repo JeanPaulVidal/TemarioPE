@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <table id="Temario">
+<body id="Temario">
+    <table>
         <thead>
             <tr>
                 <th colspan="2">Temario</th>
@@ -20,8 +20,8 @@
             <tr>
                 <td style="font-weight: bold;">1.</td>
                 <td>
-                    
                     <strong><a href="#Tema_1" id="link-temas">Estadística Descriptiva</a></strong>
+                    
                     <ul>
                         <li>Es la rama de la estadística que se encarga de recopilar, organizar, presentar y describir
                             los datos cuantitativos de un conjunto de observaciones, con el fin de facilitar su
@@ -92,7 +92,7 @@
             <tr>
                 <td style="font-weight: bold;">4.</td>
                 <td>
-                    <strong>Distribuciones de Probabilidad</strong>
+                    <strong><a href="#Tema_4" id="link-temas">Distribuciones de Probabilidad</a></strong>
                     <ul>
                         <li>Son modelos matemáticos que describen cómo se distribuyen o se comportan las probabilidades
                             de los posibles valores que puede tomar una variable aleatoria.</li><br>
@@ -157,12 +157,12 @@
     <!----------------------------------------------------                    ------------------------------------------->
     <!--------------------------------------------PROBABILIDAD Y ESTADISTICA: TEMA 1------------------------------------->
     <!-------------------------------------------------                         ----------------------------------------->
-    <section class="topic-section">
-        <h2 id="Tema_1">Tema 1: Estadística Descriptiva</h2>
+    <section class="topic-section" id="Tema_1">
+        <h2>Tema 1: Estadística Descriptiva</h2>
         <p>La estadística descriptiva es la rama de la estadística que se encarga de recopilar, organizar, presentar y
             describir los datos cuantitativos de un conjunto de observaciones, con el fin de facilitar su comprensión.
         </p>
-    <a href="#Temario">Regresar al Inicio</a>
+    <a href="#Temario" id="link-temas">Regresar al Inicio</a>
     </section>
     <table>
         <thead>
@@ -306,7 +306,7 @@
         <p>Es la rama de las matemáticas que estudia los fenómenos aleatorios y la cuantificación de la incertidumbre,
             proporcionando las bases teóricas para el análisis de datos y la toma de decisiones bajo condiciones de
             riesgo.</p>
-        <a href="#Temario">Regresar al Inicio</a>
+        <a href="#Temario" id="link-temas">Regresar al Inicio</a>
     </section>
     <table>
         <tr>
@@ -392,6 +392,117 @@
             <td>Lanzar una moneda y luego lanzar un dado.</td>
         </tr>
     </table>
+
+    <!----------------------------------------------------                    ------------------------------------------->
+    <!--------------------------------------------PROBABILIDAD Y ESTADISTICA: TEMA 4------------------------------------->
+    <!-------------------------------------------------                         ----------------------------------------->
+    <section class="topic-section" id="Tema_4">
+        <h2>Tema 4: Distribuciones de Probabilidad</h2>
+        <p>Son modelos matemáticos que describen cómo se distribuyen o se comportan las probabilidades
+            de los posibles valores que puede tomar una variable aleatoria.</p>
+        <a href="#Temario" id="link-temas">Regresar al Inicio</a>
+    </section>
+
+    <table class="probability-distributions">
+        <thead>
+          <tr>
+            <th>Subtema</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="subtopic-number">4.1 Función de Probabilidad</td>
+            <td class="subtopic-description">
+              <div class="definition">
+                La función de probabilidad, también conocida como función de masa de probabilidad (PMF), describe la probabilidad de que una variable aleatoria discreta tome un valor específico.
+              </div>
+            </td>
+            <td class="example">
+              Ejemplo: Función de masa de probabilidad (PMF) de una variable aleatoria discreta.
+            </td>
+          </tr>
+          <tr>
+            <td class="subtopic-number">4.2 Distribución Binomial</td>
+            <td class="subtopic-description">
+              <div class="definition">
+                La distribución binomial describe la probabilidad de obtener un número de éxitos en un número fijo de ensayos independientes, donde cada ensayo tiene solo dos posibles resultados (éxito o fracaso).
+              </div>
+            </td>
+            <td class="example">
+              Ejemplo: Lanzamiento de una moneda justa 10 veces y contar el número de caras.
+            </td>
+          </tr>
+          <tr>
+            <td class="subtopic-number">4.3 Distribución Hipergeométrica</td>
+            <td class="subtopic-description">
+              <div class="definition">
+                La distribución hipergeométrica describe la probabilidad de obtener un número de éxitos en un número fijo de ensayos sin reposición, donde la población total tiene un número fijo de éxitos y fracasos.
+              </div>
+            </td>
+            <td class="example">
+              Ejemplo: Sacar 3 bolas rojas de una urna que contiene 5 bolas rojas y 10 bolas blancas.
+            </td>
+          </tr>
+          <tr>
+            <td class="subtopic-number">4.4 Distribución de Poisson</td>
+            <td class="subtopic-description">
+              <div class="definition">
+                La distribución de Poisson describe la probabilidad de que ocurra un número determinado de eventos independientes en un intervalo de tiempo o espacio dado, donde la tasa media de ocurrencia es constante.
+              </div>
+            </td>
+            <td class="example">
+              Ejemplo: Número de llamadas que recibe un call center en un intervalo de tiempo.
+            </td>
+          </tr>
+          <tr>
+            <td class="subtopic-number">4.5 Distribución Normal</td>
+            <td class="subtopic-description">
+              <div class="definition">
+                La distribución normal, también conocida como distribución gaussiana, es una de las distribuciones de probabilidad más importantes y ampliamente utilizadas. Describe la distribución de muchos fenómenos naturales y es fundamental en estadística y teoría de la probabilidad.
+              </div>
+            </td>
+            <td class="example">
+              Ejemplo: Altura de los estudiantes de una clase.
+            </td>
+          </tr>
+          <tr>
+            <td class="subtopic-number">4.6 Distribución T-student</td>
+            <td class="subtopic-description">
+              <div class="definition">
+                La distribución T-student, o simplemente distribución t, es una distribución de probabilidad que se utiliza cuando el tamaño de la muestra es pequeño y la desviación estándar de la población es desconocida.
+              </div>
+            </td>
+            <td class="example">
+              Ejemplo: Prueba de hipótesis sobre la media de una población cuando el tamaño de muestra es pequeño.
+            </td>
+          </tr>
+          <tr>
+            <td class="subtopic-number">4.7 Distribución Chi Cuadrada</td>
+            <td class="subtopic-description">
+              <div class="definition">
+                La distribución Chi cuadrada (χ²) es una distribución de probabilidad continua que se utiliza ampliamente en pruebas de hipótesis y en la construcción de intervalos de confianza, especialmente cuando se trabaja con varianzas de poblaciones normales.
+              </div>
+            </td>
+            <td class="example">
+              Ejemplo: Prueba de bondad de ajuste para comprobar si los datos siguen una distribución específica.
+            </td>
+          </tr>
+          <tr>
+            <td class="subtopic-number">4.8 Distribución F</td>
+            <td class="subtopic-description">
+              <div class="definition">
+                La distribución F, también conocida como distribución de Snedecor o distribución de Fisher-Snedecor, es una distribución de probabilidad continua que se utiliza principalmente para realizar pruebas de hipótesis sobre la igualdad de varianzas de dos poblaciones normales.
+              </div>
+            </td>
+            <td class="example">
+              Ejemplo: Prueba de hipótesis sobre la igualdad de varianzas de dos poblaciones.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
 </body>
 
 </html>
